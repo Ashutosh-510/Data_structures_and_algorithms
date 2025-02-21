@@ -1,7 +1,7 @@
 package Stacks;
 
 public class CustomStack {
-   private int[] data;
+   public int[] data;
 
    private static int DEFAULT_SIZE = 10;
 

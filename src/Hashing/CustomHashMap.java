@@ -9,12 +9,17 @@ public class CustomHashMap {
         entities = new Entity[100];
     }
 
+    public void put(String key , String value){
+        int hash = Math.abs(key.hashCode() % entities.length);
+        entities[hash] = new Entity(key,value);
+
+    }
     private class Entity {
         String keyl;
         String value;
 
         public Entity(String key , String value){
-            this.key = key;
+            //this.key = key;
             this.value = value;
         }
     }
