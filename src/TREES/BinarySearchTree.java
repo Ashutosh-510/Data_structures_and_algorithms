@@ -43,13 +43,6 @@ public class BinarySearchTree {
     public static void main(String[] args) {
         BinaryNode root = null;
 
-        // Creating the following BST
-        //      50
-        //     /  \
-        //    30   70
-        //   / \   / \
-        //  20 40 60 80
-
         root = insert(root, 50);
         root = insert(root, 30);
         root = insert(root, 20);
@@ -61,6 +54,12 @@ public class BinarySearchTree {
         // Print inorder traversal of the BST
         inorder(root);
 
+        // Creating the following BST
+        //      50
+        //     /  \
+        //    30   70
+        //   / \   / \
+        //  20 40 60 80
 
     }
 }
